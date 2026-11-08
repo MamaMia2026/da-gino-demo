@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#C8202F">
+<title>Da Gino – pizzeria clasică italiană · comenzi online</title>
+<meta name="description" content="Machetă demo: pizzerie clasică italiană cu comenzi online, livrare și ridicare din local.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Ccircle cx='21' cy='21' r='20' fill='%23C8202F'/%3E%3Cpath d='M21 7 33 31H9Z' fill='%23F3C86B'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/playfair-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-800-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dmsans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="flag"></div>
+<div class="demo">Machetă demo – meniu, prețuri și zone de exemplu<span id="sim"></span></div>
+<div class="top"><div class="wrap"><span class="st" id="st"><i></i><span id="stT">Program</span></span><span>📞 0256 000 000 · Livrare gratuită peste 80 lei</span></div></div>
+
+<header class="nv"><div class="wrap">
+  <a class="logo" href="#"><svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="20" fill="#C8202F"/><path d="M21 7 33 31H9Z" fill="#F3C86B"/><circle cx="19" cy="22" r="2.4" fill="#C8202F"/><circle cx="24" cy="27" r="2" fill="#C8202F"/><circle cx="17" cy="28" r="1.8" fill="#1F6B3A"/></svg><span><b>Da <i>Gino</i></b><small>pizzeria · dal 1994</small></span></a>
+  <nav class="lk" aria-label="Navigare"><a href="#meniu">Meniu</a><a href="#meniu" data-cat="paste">Paste</a><a href="#info">Livrare</a><a href="#info">Program</a></nav>
+  <div class="mode" id="mode"><button class="on" data-m="livrare" aria-pressed="true">🛵 Livrare</button><button data-m="ridicare" aria-pressed="false">🏃 Ridicare</button></div>
+  <button class="cartb" data-open="cart">Coș <b class="tot">0 lei</b></button>
+</div></header>
+
+<main>
+<div class="hero">
+  <div class="hx">
+    <span class="ey">Pizzeria clasică · Timișoara</span>
+    <h1 class="pf">Pizza ca-n<br><i>Italia,</i> la tine<br>acasă.</h1>
+    <p>Aluat dospit 24 de ore, sos din roșii italiene și mozzarella fior di latte. Coaptă pe vatră, adusă caldă în 40 de minute.</p>
+    <div class="row"><a class="btn btn-r" href="#meniu">Comandă acum</a><a class="btn btn-o" href="tel:0256000000">Sună-ne</a></div>
+    <div class="chk"><span>🛵 <b>~40 min</b> livrare</span><span>🍕 <b>3 mărimi</b></span><span>💳 Card sau numerar la livrare</span></div>
+  </div>
+  <div class="hp"><picture><source media="(max-width:760px)" srcset="img/hero-masa-mobil.webp" width="780" height="530"><img src="img/hero-masa.webp" width="686" height="768" fetchpriority="high" decoding="async" alt="Două pizza pe masă de lemn, cu busuioc, ulei de măsline și vin roșu"></picture><div class="stamp"><b>−20%</b>a doua pizza<br>marți</div></div>
+</div>
+
+<section class="s wrap" id="meniu">
+  <div class="sh"><h2 class="pf">Il <i>Menù</i></h2><p>Alegi mărimea și extra-ingredientele la fiecare pizza. Prețurile sunt pentru 30 cm.</p></div>
+  <div class="cats" id="cats" role="toolbar" aria-label="Categorii"></div>
+  <div class="lay"><div id="mainList"></div><aside class="side" id="side" aria-label="Coșul tău"></aside></div>
+</section>
+
+<section class="s wrap" id="info"><div class="info">
+  <div class="ib"><h2>Zone de livrare</h2><table id="zt"></table></div>
+  <div class="ib"><h2>Program</h2><table id="pt"></table></div>
+  <div class="ib"><h2>Pizzeria</h2><p class="mu">Str. Exemplului 14, Timișoara<br>0256 000 000 · comenzi@exemplu.ro</p><p class="mu" style="margin-top:12px">Ridicare din local: comanda e gata în ~20 de minute. Parcare gratuită în spate.</p><a class="btn btn-g" href="tel:0256000000">Sună pentru comandă</a></div>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap in">
+    <div><span class="logo"><b>Da <i>Gino</i></b></span><p>Pizzeria clasică italiană, din 1994.</p><p><a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">ANPC – SAL</a></p></div>
+    <div><h2 class="fh">Meniu</h2><a href="#meniu" data-cat="pizza">Pizza</a><br><a href="#meniu" data-cat="paste">Paste</a><br><a href="#meniu" data-cat="desert">Deserturi</a><br><a href="#meniu" data-cat="bauturi">Băuturi</a></div>
+    <div><h2 class="fh">Informații</h2>Livrare și zone<br>Alergeni<br>Termeni și condiții<br>Confidențialitate</div>
+    <div><h2 class="fh">Contact</h2>0256 000 000<br>comenzi@exemplu.ro<br>Str. Exemplului 14</div>
+  </div>
+  <div class="wrap bot"><span>Machetă demo · Site realizat de <b>CristianWeb</b></span><a href="https://cristianweb.ro" target="_blank" rel="noopener">Vreau un site ca acesta →</a></div>
+</footer>
+
+<button class="mbar" data-open="cart"><span><span class="cnt">0 produse</span> · <b class="tot">0 lei</b></span><span class="g">Vezi coșul →</span></button>
+<div class="ov" id="ov"><div class="md" id="md" role="dialog" aria-modal="true" aria-label="Fereastră"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Formular de finalizare: static în HTML ca Netlify Forms să-l detecteze la publicare -->
+<div id="coStore" hidden>
+<form id="coForm" name="comanda" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="comanda">
+  <p class="vh"><label>Nu completa acest câmp: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <input type="hidden" name="nr_comanda"><input type="hidden" name="mod"><input type="hidden" name="zona">
+  <input type="hidden" name="produse"><input type="hidden" name="subtotal"><input type="hidden" name="taxa_livrare">
+  <input type="hidden" name="total"><input type="hidden" name="ora_livrare">
+
+  <div class="sum" id="coSum"></div>
+
+  <div class="g2">
+    <label class="fl">Nume<input name="nume" required autocomplete="name" maxlength="60"></label>
+    <label class="fl">Telefon<input name="telefon" type="tel" required autocomplete="tel" inputmode="tel" maxlength="20" placeholder="07xx xxx xxx"></label>
+  </div>
+
+  <fieldset id="coAddr"><legend>Adresa de livrare <span id="coZona"></span></legend>
+    <div class="g3">
+      <label class="fl s2">Stradă<input name="strada" required autocomplete="address-line1" maxlength="80"></label>
+      <label class="fl">Nr.<input name="numar" required maxlength="10"></label>
+    </div>
+    <div class="g2">
+      <label class="fl">Bloc / scară / ap. <small>(opțional)</small><input name="bloc_ap" autocomplete="address-line2" maxlength="40"></label>
+      <label class="fl">Interfon <small>(opțional)</small><input name="interfon" maxlength="20"></label>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>Ora</legend>
+    <p class="inchis" id="coInchis" hidden></p>
+    <label class="rd"><input type="radio" name="ora_tip" value="asap" id="oraAsap" checked> <span id="asapTxt">Cât mai repede</span></label>
+    <div class="rdp"><label class="rd"><input type="radio" name="ora_tip" value="programat" id="oraProg"> Programată</label>
+      <select name="ora_programata" id="coOra" aria-label="Ora programată"></select></div>
+  </fieldset>
+
+  <fieldset><legend id="plataTxt">Plata la livrare</legend>
+    <div class="g2">
+      <label class="rd"><input type="radio" name="plata" value="cash" checked> 💵 Cash</label>
+      <label class="rd"><input type="radio" name="plata" value="card"> 💳 Card</label>
+    </div>
+  </fieldset>
+
+  <label class="fl">Observații <small>(opțional)</small><textarea name="observatii" maxlength="300" placeholder="ex. sunați la poartă, fără tacâmuri"></textarea></label>
+
+  <p class="warn" id="coErr" role="alert"></p>
+  <button class="btn btn-r" id="coBtn" type="submit">Trimite comanda</button>
+  <button class="btn btn-wa" type="button" data-wa="1">Trimite pe WhatsApp</button>
+  <p class="mu sm">Nu se face plată online. Machetă demo – comenzile nu ajung la o pizzerie reală.</p>
+</form>
+</div>
+
+<script src="js/data.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/pizza.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
